@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  part1:
+    container_name: part1
+    hostname: part1
+    build: 
+      context: ./part1
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+
+
+  part2:
+    container_name: part2
+    hostname: part2
+    build: 
+      context: ./part2
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
+
